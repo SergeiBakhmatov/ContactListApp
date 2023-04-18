@@ -13,14 +13,20 @@ class ContactListViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let person = persons[indexPath.row]
+        let conatactDetailsVC = segue.destination as? ContactDetailsViewController
+        conatactDetailsVC?.person = person
     }
 }
 // MARK: - UITableViewDataSource
 
 extension ContactListViewController {
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         persons.count
     }

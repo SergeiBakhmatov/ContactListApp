@@ -15,6 +15,7 @@
 		7740014529EE83CB00830160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7740014429EE83CB00830160 /* Assets.xcassets */; };
 		7740014829EE83CB00830160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7740014629EE83CB00830160 /* LaunchScreen.storyboard */; };
 		7740015029EE850900830160 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740014F29EE850900830160 /* ContactListViewController.swift */; };
+		774986EF29EEBD270027742B /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774986EE29EEBD270027742B /* ContactDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7740014729EE83CB00830160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7740014929EE83CB00830160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7740014F29EE850900830160 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		774986EE29EEBD270027742B /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				7740014F29EE850900830160 /* ContactListViewController.swift */,
+				774986EE29EEBD270027742B /* ContactDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			files = (
 				7740013C29EE83CA00830160 /* AppDelegate.swift in Sources */,
 				7740013E29EE83CA00830160 /* SceneDelegate.swift in Sources */,
+				774986EF29EEBD270027742B /* ContactDetailsViewController.swift in Sources */,
 				772A940F29EE8B54004345C7 /* Person.swift in Sources */,
 				772A941129EE8C79004345C7 /* DataStore.swift in Sources */,
 				7740015029EE850900830160 /* ContactListViewController.swift in Sources */,
