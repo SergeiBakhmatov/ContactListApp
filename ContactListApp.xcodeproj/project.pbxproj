@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772A940F29EE8B54004345C7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772A940E29EE8B54004345C7 /* Person.swift */; };
 		7740013C29EE83CA00830160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740013B29EE83CA00830160 /* AppDelegate.swift */; };
 		7740013E29EE83CA00830160 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7740013D29EE83CA00830160 /* SceneDelegate.swift */; };
 		7740014329EE83CA00830160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7740014129EE83CA00830160 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		772A940E29EE8B54004345C7 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		7740013829EE83CA00830160 /* ContactListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7740013B29EE83CA00830160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7740013D29EE83CA00830160 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		7740015429EE86DF00830160 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				772A940E29EE8B54004345C7 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			files = (
 				7740013C29EE83CA00830160 /* AppDelegate.swift in Sources */,
 				7740013E29EE83CA00830160 /* SceneDelegate.swift in Sources */,
+				772A940F29EE8B54004345C7 /* Person.swift in Sources */,
 				7740015029EE850900830160 /* ContactListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
