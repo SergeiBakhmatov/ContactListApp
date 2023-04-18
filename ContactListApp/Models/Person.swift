@@ -25,7 +25,7 @@ struct Person {
         dataStore.phoneNumbers.shuffle()
         dataStore.emails.shuffle()
         
-        for index in 0...dataStore.names.count {
+        for index in 0...9 {
             let person = Person(
                 name: dataStore.names[index],
                 surname: dataStore.surnames[index],
