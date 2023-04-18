@@ -10,10 +10,6 @@ import UIKit
 final class ContactListViewController: UITableViewController {
     
     let persons = Person.getPersonList()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
