@@ -34,11 +34,12 @@
                             <outlet property="delegate" destination="SOY-Sw-VSG" id="YVh-lv-9hU"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Contact List" id="OGy-Qx-oKK"/>
                     <navigationItem key="navigationItem" title="Persons List" id="Yja-zE-nTB"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDI-KJ-Dll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-183" y="74"/>
+            <point key="canvasLocation" x="742.74809160305335" y="73.943661971830991"/>
         </scene>
         <!--Name-->
         <scene sceneID="zog-zt-NGp">
@@ -82,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Go-1t-pLb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566" y="74"/>
+            <point key="canvasLocation" x="1492.3664122137404" y="73.943661971830991"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q7y-Px-eP5">
@@ -93,12 +94,60 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="SOY-Sw-VSG" kind="relationship" relationship="rootViewController" id="WNH-na-nAk"/>
+                        <segue destination="Mi1-0P-MCo" kind="relationship" relationship="rootViewController" id="WNH-na-nAk"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVE-bH-LWe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1091" y="74"/>
+        </scene>
+        <!--Contact List-->
+        <scene sceneID="Kle-SD-dds">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Mi1-0P-MCo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Contact List" id="mO7-WF-HFX"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ncT-Ih-wPO">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="SOY-Sw-VSG" kind="relationship" relationship="viewControllers" id="Bhe-dQ-8bS"/>
+                        <segue destination="6Nx-I2-o0M" kind="relationship" relationship="viewControllers" id="MqQ-ve-e7T"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfA-Yx-wWX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183.96946564885496" y="73.943661971830991"/>
+        </scene>
+        <!--Persons List-->
+        <scene sceneID="ItF-Ip-swm">
+            <objects>
+                <tableViewController id="6Nx-I2-o0M" customClass="PersonsListViewController" customModule="ContactListApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="siF-sC-0RY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="person" id="sKq-p7-MXq">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sKq-p7-MXq" id="EUm-R0-KI9">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6Nx-I2-o0M" id="jj6-bs-tgb"/>
+                            <outlet property="delegate" destination="6Nx-I2-o0M" id="qkR-6y-Egl"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Persons List" id="YuH-3v-Hy9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dL0-S4-Z1p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="786"/>
         </scene>
     </scenes>
     <resources>
