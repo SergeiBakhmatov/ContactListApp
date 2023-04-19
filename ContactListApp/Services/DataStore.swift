@@ -5,7 +5,7 @@
 //  Created by Sergei Bakhmatov on 18.04.2023.
 //
 
-class DataStore {
+final class DataStore {
     var names = [
         "Jhon",
         "Sharon",
